@@ -1,10 +1,9 @@
-
 :root {
   --primary-color: #1b4965;
   --secondary-color: #62b6cb;
-  --accent1-color: #5fa8d3;
-  --accent2-color: #cae9ff;
-  
+  --accent1-color: #ffffff;
+  --accent2-color: #f4f4f4;
+
   --heading-font: "Georgia", serif;
   --body-font: "Arial", sans-serif;
 }
@@ -17,52 +16,46 @@
 
 body {
   font-family: var(--body-font);
-  color: var(--accent1-color);
+  color: #333;
   background-color: var(--accent2-color);
   line-height: 1.6;
 }
 
-
 header, main, footer {
-  width: 840px;
+  width: 100%;
+  max-width: 960px;
   margin: 0 auto;
 }
 
-
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
+/* Header */
+header {
+  padding: 16px;
+  overflow: hidden;
 }
 
-
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
+header img {
+  width: 120px;
+  height: auto;
+  float: left;
 }
 
-nav a {
-  margin-right: 16px;
+header nav {
+  float: right;
+  margin-top: 20px;
+}
+
+header nav a {
+  margin-left: 16px;
   text-decoration: none;
   color: var(--primary-color);
   font-weight: bold;
 }
 
-nav a:hover {
+header nav a:hover {
   color: var(--secondary-color);
 }
 
-
-.socialmedia a {
-  text-decoration: none;
-  margin: 0 8px;
-}
-
-.socialmedia img {
-  width: 32px;
-  height: 32px;
-}
-
-
+/* Hero Section */
 .hero {
   position: relative;
   margin-bottom: 20px;
@@ -74,33 +67,91 @@ nav a:hover {
   height: auto;
 }
 
+/* Hero title bar */
 .hero h1 {
   position: absolute;
   top: 20px;
+  left: 0;
   width: 100%;
-  padding: 16px;
+  padding: 12px;
   text-align: center;
-  opacity: 0.85;
-  background-color: var(--accent1-color);
-  color: #fff;
+  background-color: rgba(27, 73, 101, 0.9);
+  color: var(--accent1-color);
   font-size: 2rem;
-  letter-spacing: 1px;
+  font-family: var(--heading-font);
 }
 
+/* Article overlay */
 .hero article {
   position: absolute;
-  bottom: 20px;
-  left: 20px;
-  right: 20px;
-  background: rgba(255, 255, 255, 0.85);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(27, 73, 101, 0.9);
+  color: var(--accent1-color);
   padding: 16px;
-  border-radius: 8px;
+  overflow: hidden;
+}
+
+.hero article p {
+  margin: 0;
+  padding-right: 140px;
 }
 
 .hero article img {
   float: right;
-  width: 125px;
-  margin-left: 12px;
-  border-radius: 8px;
+  width: 120px;
+  height: auto;
+  margin-left: 16px;
+  border-radius: 4px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+/* Sections: History and Adventure */
+section {
+  margin: 20px 0;
+}
+
+section h2 {
+  background-color: var(--primary-color);
+  color: var(--accent1-color);
+  padding: 12px;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+section p {
+  margin: 12px;
+  padding: 8px;
+  color: #333;
+}
+
+/* Footer */
+footer {
+  padding: 12px 0;
+  border-top: 1px solid #ccc;
+  font-size: 0.9rem;
+  color: #333;
+  overflow: hidden;
+}
+
+/* Left side: copyright text */
+footer p {
+  float: left;
+  margin: 0;
+}
+
+/* Right side: social media icons */
+footer .socialmedia {
+  float: right;
+}
+
+footer .socialmedia a {
+  text-decoration: none;
+  margin-left: 8px;
+}
+
+footer .socialmedia img {
+  width: 28px;
+  height: 28px;
 }
