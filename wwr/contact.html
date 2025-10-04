@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact Wild Water Rafting for questions, reservations, or general inquiries. Get in touch with our team today!">
+    <meta name="author" content="Winston Joses Lee">
+    <title>Contact Us - Wild Water Rafting</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <img src="images/wwr-logo.png" alt="Wild Water Rafting Logo" id="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Hero or Intro Section -->
+        <section class="contact-hero">
+            <h1>Contact Us</h1>
+            <p>We’d love to hear from you! Reach out to us with questions, comments, or to plan your next adventure.</p>
+        </section>
+
+        <!-- Company Info -->
+        <section class="company-info">
+            <h2>Our Information</h2>
+            <address>
+                <p><strong>Wild Water Rafting</strong></p>
+                <p>123 Rapids Way, Clearwater, BC V0E 1N0</p>
+                <p>Phone: <a href="tel:+12505551234">(250) 555-1234</a></p>
+                <p>Email: <a href="mailto:info@wildwaterrafting.com">info@wildwaterrafting.com</a></p>
+            </address>
+
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.947480775856!2d-122.753874123456!3d50.987652376543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548e000000000000%3A0x1234567890abcdef!2sClearwater%2C%20BC!5e0!3m2!1sen!2sca!4v1700000000000"
+                    width="100%" height="300" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form-section">
+            <h2>Send Us a Message</h2>
+
+            <form action="#" method="post" class="contact-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <fieldset>
+                    <legend>Purpose of Message:</legend>
+                    <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+                    <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+                    <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+                </fieldset>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <label class="checkbox">
+                    <input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <!-- Employee Section -->
+        <section class="team">
+            <h2>Meet Our Team</h2>
+            <div class="team-gallery">
+                <figure>
+                    <img src="images/employee1.jpg" alt="Adventure Guide - Marcus Hayes">
+                    <figcaption>Marcus Hayes<br><small>Adventure Guide</small></figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="River Safety Manager - James Wallace">
+                    <figcaption>James Wallace<br><small>River Safety Manager</small></figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Customer Service - Claire Jensen">
+                    <figcaption>Claire Jensen<br><small>Customer Service</small></figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Wild Water Rafting | Winston Joses Lee</p>
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com"><img src="images/facebook.svg" alt="Facebook Icon"></a>
+            <a href="https://www.instagram.com"><img src="images/instagram.svg" alt="Instagram Icon"></a>
+            <a href="https://www.linkedin.com"><img src="images/linkedin.svg" alt="LinkedIn Icon"></a>
+        </nav>
+    </footer>
+</body>
+
+</html>

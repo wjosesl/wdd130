@@ -241,3 +241,99 @@ footer .socialmedia img {
     flex: 0 1 100%;
   }
 }
+
+
+/* =========================
+   CONTACT PAGE STYLES
+   ========================= */
+.contact-hero {
+  text-align: center;
+  background-color: var(--secondary-color);
+  color: var(--accent1-color);
+  padding: 2rem;
+}
+
+.company-info {
+  background-color: var(--accent1-color);
+  padding: 1.5rem;
+  border-radius: 6px;
+  margin: 1rem 0;
+}
+
+.company-info address {
+  font-style: normal;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 6px;
+}
+
+.team {
+  background-color: var(--accent2-color);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.team-gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.team-gallery figure {
+  text-align: center;
+}
+
+.team-gallery img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.contact-form-section {
+  background-color: var(--accent1-color);
+  padding: 1.5rem;
+  border-radius: 6px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form fieldset {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.contact-form button {
+  background-color: var(--primary-color);
+  color: var(--accent1-color);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: var(--secondary-color);
+}
