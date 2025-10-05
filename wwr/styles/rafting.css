@@ -242,86 +242,118 @@ footer .socialmedia img {
   }
 }
 
-
 /* =========================
    CONTACT PAGE STYLES
    ========================= */
-.contact-hero {
+
+section {
+    margin: 0;
+    padding: 0;
+}
+
+/* --- COMPANY INFO / MAP / FORM SECTION LAYOUT --- */
+
+/* Wrapper for the contact details, map, and form */
+.contact-layout {
+    padding: 20px;
+    padding-top: 5px; /* Adjust spacing */
+}
+
+.company-details {
+    /* Company name and address block */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.company-details h1 {
+  top: 20px;
+  left: 0;
+  width: 100%;
+  padding: 12px;
   text-align: center;
-  background-color: var(--secondary-color);
+  background-color: rgba(27, 73, 101);
   color: var(--accent1-color);
-  padding: 2rem;
+  font-size: 2rem;
+  font-family: var(--heading-font);
 }
 
-.company-info {
-  background-color: var(--accent1-color);
-  padding: 1.5rem;
-  border-radius: 6px;
-  margin: 1rem 0;
+.company-details address {
+    font-style: normal;
+    line-height: 1.5;
+    margin: 5px 0 15px 0;
 }
 
-.company-info address {
-  font-style: normal;
-  line-height: 1.6;
-  margin-bottom: 1rem;
+/* New container for the map and form to be side-by-side */
+.map-and-form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns: map and form */
+    gap: 30px;
+}
+
+/* Map Styling */
+.map-container {
+    /* The map area is a simple bordered box */
+    border: 1px solid #ccc;
+    height: 400px; /* Set a fixed height for visual balance */
 }
 
 .map-container iframe {
-  width: 100%;
-  height: 300px;
-  border: none;
-  border-radius: 6px;
+    width: 100%;
+    height: 100%;
 }
 
-.team {
-  background-color: var(--accent2-color);
-  padding: 1.5rem;
-  text-align: center;
-}
-
-.team-gallery {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.team-gallery figure {
-  text-align: center;
-}
-
-.team-gallery img {
-  width: 160px;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 50%;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-}
-
-.contact-form-section {
-  background-color: var(--accent1-color);
-  padding: 1.5rem;
-  border-radius: 6px;
-}
 
 .contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  max-width: 600px;
-  margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    max-width: none;
+    margin: 0;
+    align-items: center;
 }
 
-.contact-form input,
+.contact-form label {
+    text-align: left;
+    margin-right: 10px;
+}
+
+.contact-form label.checkbox-label {
+    grid-column: 1 / span 2;
+    text-align: left;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
+    padding: 6px;
+}
+
+.contact-form fieldset.radio-group {
+    grid-column: 2 / 3;
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form fieldset.radio-group legend {
+    display: none;
+}
+
+.contact-form label:has(input[type="radio"]) {
+    text-align: left;
+    margin-right: 0;
+}
+
 .contact-form textarea {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+    grid-column: 2 / 3;
+    padding: 6px;
+    resize: vertical;
 }
 
-.contact-form fieldset {
-  border: 1px solid #ccc;
-  padding: 10px;
+.contact-form label[for="message"] {
+    align-self: flex-start;
+    padding-top: 5px;
 }
 
 .contact-form button {
@@ -336,4 +368,34 @@ footer .socialmedia img {
 
 .contact-form button:hover {
   background-color: var(--secondary-color);
+}
+
+
+/* team section */
+
+
+.team {
+  background-color: var(--accent2-color);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.team-gallery {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.team-gallery figure {
+  text-align: center;
+}
+
+.team-gallery img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
