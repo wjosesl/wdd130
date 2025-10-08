@@ -399,3 +399,160 @@ section {
   border-radius: 50%;
   box-shadow: 0 4px 6px rgba(0,0,0,0.2);
 }
+
+
+/* Trips Page */
+
+
+.cta-button {
+  display: inline-block;
+  background-color: #0077b6;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.featured-trips {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #f7f9fc;
+}
+
+.trip-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 2rem auto;
+}
+
+.trip-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trip-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.trip-card h3 {
+  color: #0077b6;
+  margin-bottom: 0.5rem;
+}
+
+.trip-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.trip-card li {
+  margin: 0.3rem 0;
+  color: #333;
+}
+
+.trip img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.trip-table {
+  padding: 2rem;
+  text-align: center;
+}
+
+.trip-table table {
+  margin: 0 auto;
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+.trip-table th, .trip-table td {
+  border: 1px solid #ddd;
+  padding: 1rem;
+}
+
+.trip-table th {
+  background-color: #0077b6;
+  color: white;
+}
+
+
+
+
+
+/* =========================
+   GRID LAYOUT SECTION
+   ========================= */
+.offerings {
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.grid-layout article {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.grid-layout img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+}
+
+/* =========================
+   NEWSLETTER
+   ========================= */
+.newsletter {
+  background-color: #f4f4f4;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  max-width: 400px;
+  margin: 1rem auto;
+}
+
+.newsletter input {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.newsletter button {
+  background-color: #1b4965;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter button:hover {
+  background-color: #62b6cb;
+}
